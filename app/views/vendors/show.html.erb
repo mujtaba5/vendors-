@@ -1,0 +1,24 @@
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= @vendor.name %></h5>
+    
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><%= @vendor.email %></li>
+    <li class="list-group-item"><%= @vendor.mobile %></li>
+    <li class="list-group-item"><%= @vendor.date %></li>
+    <li class="list-group-item"><%= @vendor.note %></li>
+    
+  </ul>
+  <div  class="card-body">
+      <%= link_to "Edit", edit_vendor_path(@vendor), class:"btn btn-primary" %>
+      <%= link_to "Back", vendors_path , class:"btn btn-secondary" %><br/><br/>
+      <%= button_to "Destroy", @vendor, method: :delete , class:"btn btn-danger"%>
+        
+  </div>
+  
+</div>
+
+
+
